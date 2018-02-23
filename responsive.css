@@ -1,0 +1,39 @@
+@media (min-width:768px) and (max-width:992px){
+	main{
+		flex-wrap: wrap-reverse;
+	}
+	
+	.asideLeft{
+		width: 100%; 
+	}
+	
+	.content{
+		width: 80%;
+	}
+}
+
+@media (max-width:768px){
+	.aside, .content{
+		width: 100%;
+	}
+	
+	main{
+		flex-wrap: wrap;
+		height: 400px;
+	}
+	
+	.content{
+		order: 1;
+		height: 33.3333%;
+	}
+	
+	.asideLeft{
+		height: 33.3333%;
+		order: 2;
+	}
+	
+	.asideRight{
+		height: 33.3333%;
+		order: 3;
+	}
+}
